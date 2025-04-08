@@ -1,0 +1,141 @@
+/*Reset de styles par defauf pour s'assure que les navigateurs affichent le site */
+/* *: concerne toute la page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+/*========header======= */
+header{
+    background-color: black;
+    opacity: 0.8;
+    padding: 15px 5%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+    /* stylise le logo */
+    .logo{
+        color: pink;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+.logo span{
+    color: white;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+  margin: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/* PARTIE PRINCIPALE */
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* conteneur qui contient le formulaire a gauche et video à droite */
+.content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px 0px;
+}
+.for-section{
+    width: 45%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+/* STYLE DE TITRE DU FORMULAIRE */
+.for-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* style de label */
+  form label{
+    display: block;
+    margin-top: 10%;
+  }
+  /*style du champs input */
+  form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5%;
+    border: none;
+    border-radius: 5px;
+  }
+  /* style du bouton de formulaire */
+  button{
+    background-color: pink;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .video{
+    width: 45%;
+
+  }
+  .video video{
+    width: 100%;
+    border: radius 8px;;
+  }
+/*=PIED DE LA PAGE===== */
+footer{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+/* RESPONSIVE */
+/* regle css appliques aux écrans de taille inferieur à 768PX */
+@media(max-width:768px){
+.nav-container{
+  flex-direction: column;
+  text-align: center;
+}
+/* METRE LES ELEMENT DE MUNU EN COLONNE */
+.nav-links{
+  flex-direction: column;
+  margin-top: 10Px
+}
+.nav-links li{
+  margin: 5px 0;
+}
+.content-section{
+flex-direction: column;
+align-items: center;
+}
+ /* adpter les enfants de section dont le formulaire à gouche la video à droite */
+ .for-section,.video-section{
+  width: 100%;
+  margin-bottom: 20px;
+ }
+}
+
+
